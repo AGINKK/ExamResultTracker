@@ -1,0 +1,178 @@
+.teacher-attendance {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* Page Header */
+
+.teacher-page-header {
+  margin-bottom: 28px;
+}
+
+.teacher-page-header h2 {
+  margin: 0 0 8px;
+  color: #111827;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.teacher-page-header p {
+  margin: 0;
+  color: #6b7280;
+  font-size: 15px;
+}
+
+/* Date Filter */
+
+.teacher-attendance-filters {
+  margin-bottom: 24px;
+}
+
+.teacher-attendance-field {
+  width: 100%;
+  max-width: 360px;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+  box-sizing: border-box;
+}
+
+.teacher-attendance-field label {
+  display: block;
+  margin-bottom: 8px;
+  color: #374151;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.teacher-attendance-field input {
+  width: 100%;
+  padding: 11px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 7px;
+  color: #374151;
+  font-size: 14px;
+  font-family: inherit;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.teacher-attendance-field input:focus {
+  border-color: #6b7280;
+}
+
+/* Content */
+
+.teacher-attendance-content {
+  padding: 24px;
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+}
+
+/* Table */
+
+.teacher-attendance-table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.teacher-attendance-table-container table {
+  width: 100%;
+  min-width: 600px;
+  border-collapse: collapse;
+}
+
+.teacher-attendance-table-container th {
+  padding: 14px 16px;
+  background-color: #f9fafb;
+  color: #6b7280;
+  font-size: 13px;
+  font-weight: 600;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.teacher-attendance-table-container td {
+  padding: 15px 16px;
+  color: #374151;
+  font-size: 14px;
+  border-bottom: 1px solid #f0f1f3;
+}
+
+.teacher-attendance-table-container tbody tr:hover {
+  background-color: #f9fafb;
+}
+
+.teacher-attendance-table-container tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Status Select */
+
+.teacher-attendance-table-container select {
+  width: 130px;
+  padding: 8px 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background-color: #ffffff;
+  color: #374151;
+  font-size: 14px;
+  font-family: inherit;
+  outline: none;
+}
+
+.teacher-attendance-table-container select:focus {
+  border-color: #6b7280;
+}
+
+/* Action */
+
+.teacher-attendance-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 22px;
+}
+
+.teacher-attendance-actions button {
+  padding: 11px 20px;
+  border: none;
+  border-radius: 7px;
+  background-color: #1f2937;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.teacher-attendance-actions button:hover {
+  background-color: #374151;
+  transform: translateY(-1px);
+}
+
+/* Responsive */
+
+@media (max-width: 600px) {
+  .teacher-page-header h2 {
+    font-size: 24px;
+  }
+
+  .teacher-attendance-content {
+    padding: 18px;
+  }
+
+  .teacher-attendance-actions {
+    justify-content: stretch;
+  }
+
+  .teacher-attendance-actions button {
+    width: 100%;
+  }
+}

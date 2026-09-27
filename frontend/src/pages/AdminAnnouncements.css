@@ -1,0 +1,609 @@
+.admin-announcements {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.admin-announcements-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 28px;
+}
+
+.admin-announcements-header h2 {
+  margin: 0 0 8px;
+  color: #111827;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.admin-announcements-header p {
+  margin: 0;
+  color: #6b7280;
+  font-size: 15px;
+}
+
+
+/* =====================================================
+   PRIMARY BUTTON
+===================================================== */
+
+.admin-announcements-primary-button {
+  padding: 11px 18px;
+  border: none;
+  border-radius: 7px;
+  background-color: #1f2937;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.admin-announcements-primary-button:hover {
+  background-color: #374151;
+  transform: translateY(-1px);
+}
+
+
+/* =====================================================
+   MESSAGES
+===================================================== */
+
+.admin-announcements-message {
+  margin-bottom: 18px;
+  padding: 12px 15px;
+  border-radius: 7px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.admin-announcements-message.success {
+  background-color: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  color: #166534;
+}
+
+.admin-announcements-message.error {
+  background-color: #fef2f2;
+  border: 1px solid #fecaca;
+  color: #991b1b;
+}
+
+
+/* =====================================================
+   CONTENT
+===================================================== */
+
+.admin-announcements-content {
+  padding: 24px;
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+}
+
+
+/* =====================================================
+   SEARCH
+===================================================== */
+
+.admin-announcements-search {
+  margin-bottom: 22px;
+}
+
+.admin-announcements-search input {
+  width: 100%;
+  max-width: 520px;
+  padding: 12px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 7px;
+  color: #374151;
+  font-size: 14px;
+  font-family: inherit;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.admin-announcements-search input:focus {
+  border-color: #6b7280;
+}
+
+
+/* =====================================================
+   TABLE
+===================================================== */
+
+.admin-announcements-table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.admin-announcements-table-container table {
+  width: 100%;
+  min-width: 1050px;
+  border-collapse: collapse;
+}
+
+.admin-announcements-table-container th {
+  padding: 14px 15px;
+  background-color: #f9fafb;
+  color: #6b7280;
+  font-size: 13px;
+  font-weight: 600;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.admin-announcements-table-container td {
+  padding: 14px 15px;
+  color: #374151;
+  font-size: 14px;
+  border-bottom: 1px solid #f0f1f3;
+  vertical-align: middle;
+}
+
+.admin-announcements-table-container tbody tr:hover {
+  background-color: #f9fafb;
+}
+
+.admin-announcements-table-container tbody tr:last-child td {
+  border-bottom: none;
+}
+
+
+/* =====================================================
+   TITLE
+===================================================== */
+
+.admin-announcement-title {
+  max-width: 320px;
+  color: #111827 !important;
+  font-weight: 600;
+}
+
+
+/* =====================================================
+   STATUS
+===================================================== */
+
+.admin-announcement-status {
+  display: inline-block;
+  padding: 5px 9px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.admin-announcement-status.published {
+  background-color: #f0fdf4;
+  color: #166534;
+}
+
+.admin-announcement-status.draft {
+  background-color: #fffbeb;
+  color: #92400e;
+}
+
+
+/* =====================================================
+   ACTIONS
+===================================================== */
+
+.admin-announcement-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.admin-announcement-actions button {
+  padding: 7px 11px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background-color: #ffffff;
+  color: #374151;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.admin-announcement-actions button:hover {
+  background-color: #f3f4f6;
+}
+
+.admin-announcement-actions .delete-button {
+  color: #991b1b;
+  border-color: #fecaca;
+}
+
+.admin-announcement-actions .delete-button:hover {
+  background-color: #fef2f2;
+}
+
+
+/* =====================================================
+   EMPTY / LOADING
+===================================================== */
+
+.admin-no-announcements {
+  padding: 30px !important;
+  color: #9ca3af !important;
+  text-align: center !important;
+}
+
+
+/* =====================================================
+   MODAL OVERLAY
+===================================================== */
+
+.admin-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+
+  background-color: rgba(15, 23, 42, 0.45);
+}
+
+
+/* =====================================================
+   MODAL
+===================================================== */
+
+.admin-modal {
+  width: 100%;
+  max-width: 650px;
+  max-height: 90vh;
+
+  overflow-y: auto;
+
+  background-color: #ffffff;
+  border-radius: 10px;
+
+  box-shadow: 0 20px 50px rgba(15, 23, 42, 0.2);
+}
+
+.admin-form-modal {
+  max-width: 720px;
+}
+
+.admin-delete-modal {
+  max-width: 480px;
+}
+
+
+/* =====================================================
+   MODAL HEADER
+===================================================== */
+
+.admin-modal-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  gap: 20px;
+
+  padding: 22px 24px;
+
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.admin-modal-header h3 {
+  margin: 0 0 5px;
+
+  color: #111827;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.admin-modal-header p {
+  margin: 0;
+
+  color: #6b7280;
+  font-size: 13px;
+}
+
+.admin-modal-close {
+  width: 32px;
+  height: 32px;
+
+  border: none;
+  border-radius: 6px;
+
+  background-color: #f3f4f6;
+  color: #374151;
+
+  font-size: 22px;
+  line-height: 1;
+
+  cursor: pointer;
+}
+
+.admin-modal-close:hover {
+  background-color: #e5e7eb;
+}
+
+
+/* =====================================================
+   VIEW DETAILS
+===================================================== */
+
+.admin-announcement-view {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+
+  padding: 24px;
+}
+
+.admin-view-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.admin-view-field.full-width {
+  grid-column: 1 / -1;
+}
+
+.admin-view-field span:first-child {
+  color: #6b7280;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.admin-view-field strong {
+  color: #111827;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.admin-announcement-message-box {
+  padding: 14px;
+
+  min-height: 90px;
+
+  background-color: #f9fafb;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 7px;
+
+  color: #374151;
+  font-size: 14px;
+  line-height: 1.6;
+
+  white-space: pre-wrap;
+}
+
+
+/* =====================================================
+   FORM
+===================================================== */
+
+.admin-announcement-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+
+  padding: 24px;
+}
+
+.admin-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.admin-form-group.full-width {
+  grid-column: 1 / -1;
+}
+
+.admin-form-group label {
+  color: #374151;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.admin-form-group input,
+.admin-form-group select,
+.admin-form-group textarea {
+  width: 100%;
+
+  padding: 11px 12px;
+
+  border: 1px solid #d1d5db;
+  border-radius: 7px;
+
+  background-color: #ffffff;
+
+  color: #374151;
+
+  font-size: 14px;
+  font-family: inherit;
+
+  outline: none;
+
+  box-sizing: border-box;
+}
+
+.admin-form-group input:focus,
+.admin-form-group select:focus,
+.admin-form-group textarea:focus {
+  border-color: #6b7280;
+}
+
+.admin-form-group input:disabled {
+  background-color: #f3f4f6;
+  color: #6b7280;
+  cursor: not-allowed;
+}
+
+.admin-form-group textarea {
+  resize: vertical;
+  min-height: 110px;
+}
+
+
+/* =====================================================
+   MODAL FOOTER
+===================================================== */
+
+.admin-modal-footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  gap: 10px;
+
+  padding: 18px 24px;
+
+  border-top: 1px solid #e5e7eb;
+}
+
+.admin-modal-secondary-button,
+.admin-modal-primary-button,
+.admin-modal-delete-button {
+  padding: 9px 15px;
+
+  border-radius: 6px;
+
+  font-size: 13px;
+  font-weight: 600;
+  font-family: inherit;
+
+  cursor: pointer;
+}
+
+.admin-modal-secondary-button {
+  border: 1px solid #d1d5db;
+  background-color: #ffffff;
+  color: #374151;
+}
+
+.admin-modal-secondary-button:hover {
+  background-color: #f3f4f6;
+}
+
+.admin-modal-primary-button {
+  border: 1px solid #1f2937;
+  background-color: #1f2937;
+  color: #ffffff;
+}
+
+.admin-modal-primary-button:hover {
+  background-color: #374151;
+}
+
+.admin-modal-delete-button {
+  border: 1px solid #dc2626;
+  background-color: #dc2626;
+  color: #ffffff;
+}
+
+.admin-modal-delete-button:hover {
+  background-color: #b91c1c;
+}
+
+.admin-modal-secondary-button:disabled,
+.admin-modal-primary-button:disabled,
+.admin-modal-delete-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+
+/* =====================================================
+   DELETE CONTENT
+===================================================== */
+
+.admin-delete-content {
+  padding: 24px;
+}
+
+.admin-delete-content p {
+  margin: 0 0 12px;
+
+  color: #374151;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.admin-delete-content strong {
+  display: block;
+
+  margin-bottom: 6px;
+
+  color: #111827;
+  font-size: 15px;
+}
+
+.admin-delete-content small {
+  color: #9ca3af;
+  font-size: 12px;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 700px) {
+
+  .admin-announcements-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .admin-announcements-primary-button {
+    width: 100%;
+  }
+
+  .admin-announcements-content {
+    padding: 18px;
+  }
+
+  .admin-announcements-header h2 {
+    font-size: 24px;
+  }
+
+  .admin-announcement-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-form-group.full-width {
+    grid-column: auto;
+  }
+
+  .admin-announcement-view {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-view-field.full-width {
+    grid-column: auto;
+  }
+
+  .admin-modal-footer {
+    flex-direction: column-reverse;
+    align-items: stretch;
+  }
+
+  .admin-modal-footer button {
+    width: 100%;
+  }
+
+}

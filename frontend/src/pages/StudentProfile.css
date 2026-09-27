@@ -1,0 +1,58 @@
+.student-profile {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.profile-intro {
+  margin-bottom: 30px;
+}
+
+.profile-intro h2 {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.profile-intro p {
+  color: #6b7280;
+}
+
+.profile-card {
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.profile-card h3 {
+  font-size: 20px;
+  margin-bottom: 24px;
+}
+
+.profile-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+}
+
+.profile-item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.profile-item span {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.profile-item strong {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+@media (max-width: 700px) {
+  .profile-grid {
+    grid-template-columns: 1fr;
+  }
+}

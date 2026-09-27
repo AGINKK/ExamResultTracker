@@ -1,0 +1,72 @@
+.student-results {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.results-intro {
+  margin-bottom: 30px;
+}
+
+.results-intro h2 {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.results-intro p {
+  color: #6b7280;
+}
+
+.semester-results {
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.semester-results h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.results-table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.semester-results table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.semester-results th,
+.semester-results td {
+  padding: 14px 12px;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.semester-results th {
+  font-size: 14px;
+  color: #6b7280;
+  font-weight: 600;
+}
+
+.semester-results td {
+  font-size: 15px;
+}
+
+.semester-results tbody tr:last-child td {
+  border-bottom: none;
+}
+
+@media (max-width: 700px) {
+  .semester-results {
+    padding: 18px;
+  }
+
+  .semester-results th,
+  .semester-results td {
+    padding: 12px 8px;
+  }
+}

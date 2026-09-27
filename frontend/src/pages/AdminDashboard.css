@@ -1,0 +1,161 @@
+.admin-dashboard {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* Welcome Section */
+
+.admin-welcome {
+  margin-bottom: 32px;
+  padding: 28px;
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+}
+
+.admin-welcome h2 {
+  margin: 0 0 8px;
+  color: #111827;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.admin-welcome p {
+  margin: 0;
+  color: #6b7280;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* Statistics */
+
+.admin-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.admin-stat-card {
+  padding: 24px;
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.admin-stat-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.08);
+}
+
+.admin-stat-card h3 {
+  margin: 0 0 12px;
+  color: #64748b;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.admin-stat-value {
+  margin: 0 0 6px;
+  color: #111827;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.admin-stat-description {
+  margin: 0;
+  color: #9ca3af;
+  font-size: 13px;
+}
+
+/* Quick Actions */
+
+.admin-quick-actions {
+  margin-top: 36px;
+}
+
+.admin-quick-actions h2 {
+  margin: 0 0 18px;
+  color: #111827;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.admin-actions-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.admin-action-card {
+  padding: 22px;
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.admin-action-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
+}
+
+.admin-action-card h3 {
+  margin: 0 0 8px;
+  color: #111827;
+  font-size: 17px;
+}
+
+.admin-action-card p {
+  margin: 0;
+  color: #6b7280;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.admin-action-card {
+  text-decoration: none;
+}
+
+/* Responsive */
+
+@media (max-width: 1000px) {
+  .admin-stats,
+  .admin-actions-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .admin-stats,
+  .admin-actions-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-welcome {
+    padding: 22px;
+  }
+
+  .admin-welcome h2 {
+    font-size: 24px;
+  }
+
+  .admin-stat-card {
+    padding: 20px;
+  }
+
+  .admin-quick-actions {
+    margin-top: 28px;
+  }
+
+  .admin-action-card {
+    padding: 20px;
+  }
+}

@@ -1,0 +1,591 @@
+/* =====================================================
+   MAIN
+===================================================== */
+
+.admin-exams {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.admin-exams-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 28px;
+}
+
+.admin-exams-header h2 {
+  margin: 0 0 8px;
+  color: #111827;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.admin-exams-header p {
+  margin: 0;
+  color: #6b7280;
+  font-size: 15px;
+}
+
+
+/* =====================================================
+   PRIMARY BUTTON
+===================================================== */
+
+.admin-exams-primary-button {
+  padding: 11px 18px;
+  border: none;
+  border-radius: 7px;
+
+  background-color: #1f2937;
+  color: #ffffff;
+
+  font-size: 14px;
+  font-weight: 600;
+  font-family: inherit;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.admin-exams-primary-button:hover {
+  background-color: #374151;
+  transform: translateY(-1px);
+}
+
+
+/* =====================================================
+   SUCCESS MESSAGE
+===================================================== */
+
+.admin-exams-success {
+  margin-bottom: 18px;
+  padding: 12px 14px;
+
+  border: 1px solid #bbf7d0;
+  border-radius: 7px;
+
+  background-color: #f0fdf4;
+  color: #166534;
+
+  font-size: 14px;
+  font-weight: 500;
+}
+
+
+/* =====================================================
+   ERROR MESSAGE
+===================================================== */
+
+.admin-exams-error {
+  margin-bottom: 18px;
+  padding: 12px 14px;
+
+  border: 1px solid #fecaca;
+  border-radius: 7px;
+
+  background-color: #fef2f2;
+  color: #b91c1c;
+
+  font-size: 14px;
+  font-weight: 500;
+}
+
+
+/* =====================================================
+   CONTENT
+===================================================== */
+
+.admin-exams-content {
+  padding: 24px;
+
+  background-color: #ffffff;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+
+  box-shadow:
+    0 2px 8px rgba(15, 23, 42, 0.04);
+}
+
+
+/* =====================================================
+   SEARCH
+===================================================== */
+
+.admin-exams-search {
+  margin-bottom: 22px;
+}
+
+.admin-exams-search input {
+  width: 100%;
+  max-width: 500px;
+
+  padding: 12px 14px;
+
+  border: 1px solid #d1d5db;
+  border-radius: 7px;
+
+  color: #374151;
+
+  font-size: 14px;
+  font-family: inherit;
+
+  box-sizing: border-box;
+  outline: none;
+}
+
+.admin-exams-search input:focus {
+  border-color: #6b7280;
+}
+
+
+/* =====================================================
+   TABLE
+===================================================== */
+
+.admin-exams-table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.admin-exams-table-container table {
+  width: 100%;
+  min-width: 1100px;
+
+  border-collapse: collapse;
+}
+
+.admin-exams-table-container th {
+  padding: 14px 15px;
+
+  background-color: #f9fafb;
+  color: #6b7280;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  text-align: left;
+
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.admin-exams-table-container td {
+  padding: 14px 15px;
+
+  color: #374151;
+
+  font-size: 14px;
+
+  border-bottom: 1px solid #f0f1f3;
+}
+
+.admin-exams-table-container tbody tr:hover {
+  background-color: #f9fafb;
+}
+
+.admin-exams-table-container tbody tr:last-child td {
+  border-bottom: none;
+}
+
+
+/* =====================================================
+   STATUS
+===================================================== */
+
+.admin-exam-status {
+  display: inline-block;
+
+  padding: 5px 9px;
+
+  border-radius: 6px;
+
+  font-size: 12px;
+  font-weight: 600;
+}
+
+
+/* Scheduled */
+
+.admin-exam-status-scheduled {
+  background-color: #eff6ff;
+  color: #1d4ed8;
+}
+
+
+/* Ongoing */
+
+.admin-exam-status-ongoing {
+  background-color: #fff7ed;
+  color: #c2410c;
+}
+
+
+/* Completed */
+
+.admin-exam-status-completed {
+  background-color: #f0fdf4;
+  color: #166534;
+}
+
+
+/* Cancelled */
+
+.admin-exam-status-cancelled {
+  background-color: #fef2f2;
+  color: #b91c1c;
+}
+
+
+/* =====================================================
+   ACTIONS
+===================================================== */
+
+.admin-exam-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.admin-exam-actions button {
+  padding: 7px 11px;
+
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+
+  background-color: #ffffff;
+  color: #374151;
+
+  font-size: 12px;
+  font-weight: 600;
+  font-family: inherit;
+
+  cursor: pointer;
+}
+
+.admin-exam-actions button:hover {
+  background-color: #f3f4f6;
+}
+
+
+/* =====================================================
+   EMPTY / LOADING
+===================================================== */
+
+.admin-no-exams {
+  padding: 30px !important;
+
+  color: #9ca3af !important;
+
+  text-align: center !important;
+}
+
+
+/* =====================================================
+   MODAL OVERLAY
+===================================================== */
+
+.admin-exam-modal-overlay {
+  position: fixed;
+
+  inset: 0;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+
+  background-color: rgba(15, 23, 42, 0.45);
+
+  z-index: 1000;
+}
+
+
+/* =====================================================
+   MODAL
+===================================================== */
+
+.admin-exam-modal {
+  width: 100%;
+  max-width: 620px;
+
+  max-height: 90vh;
+
+  overflow-y: auto;
+
+  padding: 26px;
+
+  background-color: #ffffff;
+
+  border-radius: 10px;
+
+  box-shadow:
+    0 15px 40px rgba(15, 23, 42, 0.18);
+}
+
+
+/* =====================================================
+   MODAL HEADER
+===================================================== */
+
+.admin-exam-modal-header {
+  display: flex;
+
+  align-items: flex-start;
+  justify-content: space-between;
+
+  gap: 20px;
+
+  margin-bottom: 22px;
+}
+
+.admin-exam-modal-header h3 {
+  margin: 0 0 6px;
+
+  color: #111827;
+
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.admin-exam-modal-header p {
+  margin: 0;
+
+  color: #6b7280;
+
+  font-size: 13px;
+}
+
+
+/* =====================================================
+   CLOSE BUTTON
+===================================================== */
+
+.admin-exam-modal-close {
+  width: 32px;
+  height: 32px;
+
+  border: none;
+  border-radius: 6px;
+
+  background-color: #f3f4f6;
+
+  color: #374151;
+
+  font-size: 22px;
+  line-height: 1;
+
+  cursor: pointer;
+}
+
+.admin-exam-modal-close:hover {
+  background-color: #e5e7eb;
+}
+
+
+/* =====================================================
+   FORM ERROR
+===================================================== */
+
+.admin-exam-form-error {
+  margin-bottom: 18px;
+
+  padding: 11px 13px;
+
+  border: 1px solid #fecaca;
+  border-radius: 7px;
+
+  background-color: #fef2f2;
+  color: #b91c1c;
+
+  font-size: 13px;
+}
+
+
+/* =====================================================
+   FORM
+===================================================== */
+
+.admin-exam-form {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 18px;
+}
+
+.admin-exam-form-group {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 7px;
+}
+
+.admin-exam-form-group label {
+  color: #374151;
+
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.admin-exam-form-group input,
+.admin-exam-form-group select {
+  width: 100%;
+
+  padding: 11px 12px;
+
+  box-sizing: border-box;
+
+  border: 1px solid #d1d5db;
+  border-radius: 7px;
+
+  background-color: #ffffff;
+
+  color: #374151;
+
+  font-size: 14px;
+  font-family: inherit;
+
+  outline: none;
+}
+
+.admin-exam-form-group input:focus,
+.admin-exam-form-group select:focus {
+  border-color: #6b7280;
+}
+
+.admin-exam-form-group input:disabled {
+  background-color: #f3f4f6;
+
+  color: #6b7280;
+
+  cursor: not-allowed;
+}
+
+
+/* =====================================================
+   FORM ACTIONS
+===================================================== */
+
+.admin-exam-form-actions {
+  grid-column: 1 / -1;
+
+  display: flex;
+
+  justify-content: flex-end;
+
+  gap: 10px;
+
+  margin-top: 6px;
+
+  padding-top: 20px;
+
+  border-top: 1px solid #e5e7eb;
+}
+
+
+/* Cancel */
+
+.admin-exam-cancel-button {
+  padding: 10px 16px;
+
+  border: 1px solid #d1d5db;
+  border-radius: 7px;
+
+  background-color: #ffffff;
+  color: #374151;
+
+  font-size: 13px;
+  font-weight: 600;
+  font-family: inherit;
+
+  cursor: pointer;
+}
+
+.admin-exam-cancel-button:hover {
+  background-color: #f3f4f6;
+}
+
+
+/* Save */
+
+.admin-exam-save-button {
+  padding: 10px 17px;
+
+  border: none;
+  border-radius: 7px;
+
+  background-color: #1f2937;
+  color: #ffffff;
+
+  font-size: 13px;
+  font-weight: 600;
+  font-family: inherit;
+
+  cursor: pointer;
+}
+
+.admin-exam-save-button:hover {
+  background-color: #374151;
+}
+
+.admin-exam-save-button:disabled,
+.admin-exam-cancel-button:disabled,
+.admin-exam-modal-close:disabled {
+  opacity: 0.6;
+
+  cursor: not-allowed;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 700px) {
+
+  .admin-exams-header {
+    align-items: flex-start;
+
+    flex-direction: column;
+  }
+
+  .admin-exams-primary-button {
+    width: 100%;
+  }
+
+  .admin-exams-content {
+    padding: 18px;
+  }
+
+  .admin-exams-header h2 {
+    font-size: 24px;
+  }
+
+  .admin-exam-form {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-exam-form-actions {
+    grid-column: auto;
+
+    flex-direction: column;
+  }
+
+  .admin-exam-cancel-button,
+  .admin-exam-save-button {
+    width: 100%;
+  }
+
+}

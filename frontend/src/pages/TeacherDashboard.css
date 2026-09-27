@@ -1,0 +1,236 @@
+.teacher-dashboard {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* Welcome Section */
+
+.teacher-welcome {
+  margin-bottom: 32px;
+  padding: 28px;
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+}
+
+.teacher-welcome h2 {
+  margin: 0 0 8px;
+  color: #111827;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.teacher-welcome p {
+  margin: 0;
+  color: #6b7280;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* Statistics */
+
+.teacher-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.teacher-stat-card {
+  padding: 24px;
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.teacher-stat-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.08);
+}
+
+.teacher-stat-card h3 {
+  margin: 0 0 12px;
+  color: #64748b;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.teacher-stat-value {
+  margin: 0 0 6px;
+  color: #111827;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.teacher-stat-description {
+  margin: 0;
+  color: #9ca3af;
+  font-size: 13px;
+}
+
+/* Quick Actions */
+
+.teacher-quick-actions {
+  margin-top: 36px;
+}
+
+.teacher-quick-actions h2 {
+  margin: 0 0 18px;
+  color: #111827;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.teacher-actions-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.teacher-action-card {
+  padding: 22px;
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.teacher-action-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
+}
+
+.teacher-action-card h3 {
+  margin: 0 0 8px;
+  color: #111827;
+  font-size: 17px;
+}
+
+.teacher-action-card p {
+  margin: 0;
+  color: #6b7280;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.teacher-action-card {
+  text-decoration: none;
+}
+
+/* Responsive Design */
+
+@media (max-width: 900px) {
+  .teacher-stats,
+  .teacher-actions-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .teacher-welcome {
+    padding: 22px;
+  }
+}
+
+@media (max-width: 600px) {
+  .teacher-welcome h2 {
+    font-size: 24px;
+  }
+
+  .teacher-stat-card {
+    padding: 20px;
+  }
+
+  .teacher-quick-actions {
+    margin-top: 28px;
+  }
+
+  .teacher-action-card {
+    padding: 20px;
+  }
+}
+
+/* =========================================
+   TEACHER WELCOME ROLE
+========================================= */
+
+.teacher-welcome-role {
+  margin-top: 8px !important;
+  color: #64748b !important;
+  font-size: 14px !important;
+}
+
+
+/* =========================================
+   DASHBOARD ERROR
+========================================= */
+
+.teacher-dashboard-error {
+  margin-bottom: 24px;
+  padding: 18px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  background-color: #fff7ed;
+  border: 1px solid #fed7aa;
+  border-radius: 10px;
+}
+
+.teacher-dashboard-error strong {
+  display: block;
+  margin-bottom: 5px;
+  color: #9a3412;
+  font-size: 15px;
+}
+
+.teacher-dashboard-error p {
+  margin: 0;
+  color: #c2410c;
+  font-size: 14px;
+}
+
+
+/* =========================================
+   RETRY BUTTON
+========================================= */
+
+.teacher-retry-button {
+  padding: 9px 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background-color: #ffffff;
+  color: #374151;
+  font-size: 14px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.teacher-retry-button:hover {
+  background-color: #f9fafb;
+}
+
+
+/* =========================================
+   MOBILE ERROR
+========================================= */
+
+@media (max-width: 600px) {
+
+  .teacher-dashboard-error {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .teacher-retry-button {
+    width: 100%;
+  }
+
+}

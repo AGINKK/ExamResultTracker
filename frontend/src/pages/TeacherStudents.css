@@ -1,0 +1,123 @@
+.teacher-students {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* Page Header */
+
+.teacher-page-header {
+  margin-bottom: 28px;
+}
+
+.teacher-page-header h2 {
+  margin: 0 0 8px;
+  color: #111827;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.teacher-page-header p {
+  margin: 0;
+  color: #6b7280;
+  font-size: 15px;
+}
+
+/* Content */
+
+.teacher-students-content {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+}
+
+/* Search */
+
+.teacher-search-box {
+  margin-bottom: 22px;
+}
+
+.teacher-search-box input {
+  width: 100%;
+  max-width: 420px;
+  padding: 12px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 7px;
+  font-size: 14px;
+  font-family: inherit;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.teacher-search-box input:focus {
+  border-color: #6b7280;
+}
+
+/* Table */
+
+.teacher-students-table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.teacher-students-table-container table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 700px;
+}
+
+.teacher-students-table-container th {
+  padding: 14px 16px;
+  background-color: #f9fafb;
+  color: #6b7280;
+  font-size: 13px;
+  font-weight: 600;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.teacher-students-table-container td {
+  padding: 15px 16px;
+  color: #374151;
+  font-size: 14px;
+  border-bottom: 1px solid #f0f1f3;
+}
+
+.teacher-students-table-container tbody tr:hover {
+  background-color: #f9fafb;
+}
+
+.teacher-students-table-container tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Responsive */
+
+@media (max-width: 600px) {
+  .teacher-students-content {
+    padding: 18px;
+  }
+
+  .teacher-page-header h2 {
+    font-size: 24px;
+  }
+}
+
+/* Loading */
+
+.teacher-loading {
+  padding: 35px;
+  text-align: center;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+
+/* Empty State */
+
+.teacher-no-students {
+  padding: 35px !important;
+  text-align: center !important;
+  color: #6b7280 !important;
+}

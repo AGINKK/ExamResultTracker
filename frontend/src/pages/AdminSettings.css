@@ -1,0 +1,286 @@
+.admin-settings {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* =====================================================
+   INTRO
+===================================================== */
+
+.admin-settings-intro {
+  margin-bottom: 28px;
+}
+
+.admin-settings-intro h2 {
+  margin: 0 0 8px;
+  color: #111827;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.admin-settings-intro p {
+  margin: 0;
+  color: #6b7280;
+  font-size: 15px;
+}
+
+
+/* =====================================================
+   MESSAGE
+===================================================== */
+
+.admin-settings-message {
+  margin-bottom: 20px;
+  padding: 12px 14px;
+  border-radius: 7px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.admin-settings-message.success {
+  background-color: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  color: #166534;
+}
+
+.admin-settings-message.error {
+  background-color: #fef2f2;
+  border: 1px solid #fecaca;
+  color: #991b1b;
+}
+
+
+/* =====================================================
+   CARD
+===================================================== */
+
+.admin-settings-card {
+  margin-bottom: 24px;
+  padding: 26px;
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+}
+
+.admin-settings-card h3 {
+  margin: 0 0 22px;
+  color: #111827;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+
+/* =====================================================
+   LOADING
+===================================================== */
+
+.admin-settings-loading {
+  margin: 0;
+  color: #9ca3af;
+  font-size: 14px;
+}
+
+
+/* =====================================================
+   ACCOUNT SETTINGS
+===================================================== */
+
+.admin-settings-row {
+  padding: 16px 0;
+  border-bottom: 1px solid #f0f1f3;
+}
+
+.admin-settings-row:first-of-type {
+  padding-top: 0;
+}
+
+.admin-settings-row:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.admin-settings-row strong {
+  display: block;
+  margin-bottom: 5px;
+  color: #374151;
+  font-size: 15px;
+}
+
+.admin-settings-row p {
+  margin: 0;
+  color: #9ca3af;
+  font-size: 14px;
+}
+
+
+/* =====================================================
+   NOTIFICATION OPTIONS
+===================================================== */
+
+.admin-settings-option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 18px 0;
+  border-bottom: 1px solid #f0f1f3;
+}
+
+.admin-settings-option:first-of-type {
+  padding-top: 0;
+}
+
+.admin-settings-option:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.admin-settings-option strong {
+  display: block;
+  margin-bottom: 5px;
+  color: #374151;
+  font-size: 15px;
+}
+
+.admin-settings-option p {
+  margin: 0;
+  color: #9ca3af;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+
+/* =====================================================
+   SWITCH
+===================================================== */
+
+.admin-settings-switch {
+  position: relative;
+  display: inline-block;
+  flex-shrink: 0;
+  width: 44px;
+  height: 24px;
+}
+
+.admin-settings-switch input {
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.admin-settings-switch span {
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  background-color: #d1d5db;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.admin-settings-switch span::before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  left: 3px;
+  top: 3px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  transition: transform 0.2s ease;
+}
+
+.admin-settings-switch input:checked + span {
+  background-color: #374151;
+}
+
+.admin-settings-switch input:checked + span::before {
+  transform: translateX(20px);
+}
+
+
+/* =====================================================
+   SYSTEM INFORMATION
+===================================================== */
+
+.admin-settings-system-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.admin-settings-system-grid div {
+  padding: 16px;
+  background-color: #f9fafb;
+  border-radius: 8px;
+}
+
+.admin-settings-system-grid span {
+  display: block;
+  margin-bottom: 6px;
+  color: #9ca3af;
+  font-size: 12px;
+}
+
+.admin-settings-system-grid strong {
+  color: #374151;
+  font-size: 14px;
+}
+
+
+/* =====================================================
+   SAVE BUTTON
+===================================================== */
+
+.admin-settings-save {
+  padding: 11px 20px;
+  border: none;
+  border-radius: 7px;
+  background-color: #1f2937;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.admin-settings-save:hover {
+  background-color: #374151;
+  transform: translateY(-1px);
+}
+
+.admin-settings-save:disabled {
+  background-color: #9ca3af;
+  cursor: not-allowed;
+  transform: none;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 700px) {
+  .admin-settings-card {
+    padding: 20px;
+  }
+
+  .admin-settings-intro h2 {
+    font-size: 24px;
+  }
+
+  .admin-settings-option {
+    align-items: flex-start;
+  }
+
+  .admin-settings-system-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-settings-save {
+    width: 100%;
+  }
+}
